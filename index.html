@@ -9,57 +9,64 @@
     <title>Tip calculator app</title>
   </head>
   <body>
-    <div class="big-box">
-      <img class="logo" src="./images/logo.svg" alt="" />
-      <div class="box">
-        <div class="left-box">
-          <div class="left-input-1">
-            <label for="bill">Bill</label>
-            <div class="dollar">
-              <input
-                type="number"
-                name="number"
-                id="bill"
-                placeholder="0"
-                required
-                inputmode="numeric"
-                min="1"
-                max="9999999999"
-              />
-              <img src="./images/icon-dollar.svg" alt="" />
+    <header>
+      <img class="logo" src="./images/logo.svg" alt="Tip Calculator Logo" />
+    </header>
+    <main>
+      <div class="big-box">
+        <section class="box">
+          <div class="left-box">
+            <div class="left-input-1">
+              <label for="bill">Bill</label>
+              <div class="dollar">
+                <input
+                  type="number"
+                  name="number"
+                  id="bill"
+                  placeholder="0"
+                  required
+                  inputmode="numeric"
+                  min="1"
+                  max="9999999999"
+                />
+                <img src="./images/icon-dollar.svg" alt="Dollar Icon" />
+              </div>
+            </div>
+            <div class="left-box-btn">
+              <button id="5cent" class="clrbtn" value="5">5%</button>
+              <button id="10cent" class="clrbtn" value="10">10%</button>
+              <button id="15cent" class="clrbtn" value="15">15%</button>
+              <button id="25cent" class="clrbtn" value="25">25%</button>
+              <button id="50cent" class="clrbtn" value="50">50%</button>
+              <input type="number" placeholder="CUSTOM" id="custom" />
+            </div>
+            <div class="left-input-2">
+              <div class="flex-container">
+                <label for="people">Number of people</label>
+                <span id="validity"></span>
+              </div>
+              <div class="user">
+                <input type="number" id="people" required placeholder="0" />
+                <img src="./images/icon-person.svg" alt="Person Icon" />
+              </div>
             </div>
           </div>
-          <div class="left-box-btn">
-            <button id="5cent" class="clrbtn" value="5">5%</button>
-            <button id="10cent" class="clrbtn" value="10">10%</button>
-            <button id="15cent" class="clrbtn" value="15">15%</button>
-            <button id="25cent" class="clrbtn" value="25">25%</button>
-            <button id="50cent" class="clrbtn" value="50">50%</button>
-            <input type="number" placeholder="CUSTOM" id="custom" />
-          </div>
-          <div class="left-input-2">
-            <div class="flex-container">
-              <label for="people">Number of people</label>
-              <span id="validity"></span>
+          <div class="right-box">
+            <div class="min-box">
+              <p><span>Tip Amount</span>/ person</p>
+              <input type="text" maxlength="10" id="tipamount" disabled />
             </div>
-            <div class="user">
-              <input type="number" id="people" required placeholder="0" />
-              <img src="./images/icon-person.svg" alt="" />
+            <div class="min-box">
+              <p><span>Total</span>/ person</p>
+              <input type="text" maxlength="10" id="totalamt" disabled />
             </div>
+            <button type="submit" id="reset">RESET</button>
           </div>
-        </div>
-        <div class="right-box">
-          <div class="min-box">
-            <p><span>Tip Amount</span>/ person</p>
-            <input type="text" maxlength="10" id="tipamount" disabled />
-          </div>
-          <div class="min-box">
-            <p><span>total</span>/ person</p>
-            <input type="text" maxlength="10" id="totalamt" disabled />
-          </div>
-          <button type="submit" id="reset">RESET</button>
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Your Name - Tip Calculator App</p>
+    </footer>
   </body>
 </html>
