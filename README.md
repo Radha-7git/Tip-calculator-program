@@ -54,6 +54,11 @@ This is a simple and interactive Tip Calculator web application. It helps users 
 - **JavaScript**: For adding interactivity and performing calculations.
 
 ---
+![Project Screenshot](./Sc/calculator.png)
+
+
+
+
 
 ## Test Cases
 ### Case 1
